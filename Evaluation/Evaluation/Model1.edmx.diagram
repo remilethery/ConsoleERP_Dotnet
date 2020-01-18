@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="b6a854257ae94998b943b7c1a737691c" Name="Diagram1">
+        <EntityTypeShape EntityType="ErpModel.Client" Width="1.5" PointX="1.5" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ErpModel.Command" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ErpModel.Product" Width="1.5" PointX="0.75" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ErpModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ErpModel.CommandDetails" Width="1.5" PointX="3" PointY="3.75" IsExpanded="true" />
+        <AssociationConnector Association="ErpModel.FK_Command_Client" ManuallyRouted="false" />
+        <AssociationConnector Association="ErpModel.FK_CommandDetails_Command" ManuallyRouted="false" />
+        <AssociationConnector Association="ErpModel.FK_CommandDetails_ProductDetails" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="ErpModel.Stock" Width="1.5" PointX="3" PointY="0.875" />
+        <AssociationConnector Association="ErpModel.FK_Stock_Product" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
